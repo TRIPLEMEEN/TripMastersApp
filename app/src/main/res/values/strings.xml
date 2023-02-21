@@ -9,6 +9,7 @@
     <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Welcome to Your Sound Haven</string>
+    <string name="splash_screen_text">TunesByTrip</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="sign_in">Sign in</string>
 </resources>
