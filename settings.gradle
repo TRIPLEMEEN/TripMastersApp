@@ -12,9 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-<<<<<<< HEAD
-rootProject.name = "TunesByTrip"
-=======
 rootProject.name = "TRIPIFY"
->>>>>>> b1bd52c (commit_cinco)
 include ':app'

@@ -2,33 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-<<<<<<< HEAD
-=======
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
->>>>>>> b1bd52c (commit_cinco)
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-<<<<<<< HEAD
-=======
         android:requestLegacyExternalStorage="true"
->>>>>>> b1bd52c (commit_cinco)
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-<<<<<<< HEAD
-        android:theme="@style/Theme.TunesByTrip"
-        tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.TunesByTrip.NoActionBar">
-=======
-        android:theme="@style/Theme.TRIPIFY"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
             android:name=".MusicPlayerActivity"
@@ -38,16 +23,8 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Activity.HomeActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".Activity.SplashScreen"
             android:exported="true">
->>>>>>> b1bd52c (commit_cinco)
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -58,8 +35,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-<<<<<<< HEAD
-=======
         <activity
             android:name=".Activity.LoginActivity"
             android:exported="false">
@@ -82,7 +57,6 @@
                 android:value="" />
         </activity>
 
->>>>>>> b1bd52c (commit_cinco)
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
