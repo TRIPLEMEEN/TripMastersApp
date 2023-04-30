@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> b1bd52c (commit_cinco)
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -32,3 +37,72 @@
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+=======
+    tools:context=".Activity.MainActivity">
+
+    <TextView
+        android:id="@+id/user_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/no_songs_text"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="101dp"
+        android:layout_toStartOf="@+id/logout_btn"
+        android:fontFamily="@font/irish_grover"
+        android:text="@string/hello"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/songs_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logout_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="160dp"
+        android:padding="10dp"
+        android:text="@string/songs"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_songs_text"
+        android:text="@string/no_songs_found"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/songs_text"
+        android:visibility="visible" />
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="@color/tripify_green"
+        android:fontFamily="@font/irish_grover"
+        android:text="@string/logout_btn"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>
+>>>>>>> b1bd52c (commit_cinco)

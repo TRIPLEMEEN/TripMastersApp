@@ -1,4 +1,5 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">TunesByTrip</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
@@ -12,4 +13,37 @@
     <string name="splash_screen_text">TunesByTrip</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="sign_in">Sign in</string>
+=======
+    <string name="app_name">TRIPIFY</string>
+    <string name="signup_header">SIGN UP</string>
+    <string name="signup_undertext">Get access to 1,000,000 songs on your device</string>
+    <string name="register_btn">Sign Up</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="signin_header">SIGN IN</string>
+    <string name="login_btn">Sign In</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="splashtext">TRIPIFY</string>
+    <string name="splash_undertext">WELCOME TO YOUR SOUND HAVEN</string>
+    <string name="btnGoogle">Google</string>
+    <string name="btnFacebook">Facebook</string>
+    <string name="dont_have_account">Dont have an account?</string>
+    <string name="sign_up_redirect">Sign Up</string>
+    <string name="hint_password">******</string>
+    <string name="hint_email">lovemehard@gmail.com</string>
+    <string name="hint_username">Username</string>
+    <string name="logout_btn">Logout</string>
+    <string name="got_account_sign_in">SIGN IN</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="no_songs_found">NO SONGS FOUND</string>
+    <string name="songs">SONGS</string>
+    <string name="todo">TODO</string>
+    <string name="title_of_the_song">Title of the song</string>
+    <string name="_0_00">0:00</string>
+    <string name="_0_00_dup">0:00</string>
+    <string name="todo_dup">TODO</string>
+    <string name="todo_dup_2">TODO</string>
+    <string name="hello">Hello!</string>
+    <string name="sdcard_path">/mnt/sdcard/Download/VIEWS</string>
+
+>>>>>>> b1bd52c (commit_cinco)
 </resources>

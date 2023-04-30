@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.TunesByTrip" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+=======
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.TRIPIFY" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+>>>>>>> b1bd52c (commit_cinco)
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

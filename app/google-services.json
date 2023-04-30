@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "977972943652",
+    "project_id": "tripify-b9130",
+    "storage_bucket": "tripify-b9130.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977972943652:android:b7fdffbc4a08e7bebcf1b1",
+        "android_client_info": {
+          "package_name": "com.example.tripify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977972943652-vj0c3i13tlqn3dphj5u6fr4j3tq8gvd3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVuAReUT_OZEe85iuTYkh_s0wZrWl0vko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977972943652-vj0c3i13tlqn3dphj5u6fr4j3tq8gvd3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
