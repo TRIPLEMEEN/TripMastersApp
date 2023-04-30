@@ -34,7 +34,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth auth;
-    Button button;
+    Button button, getLocal;
     TextView textView;
     FirebaseUser user;
     private RecyclerView recyclerView;
@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         noMusicTextView = findViewById(R.id.no_songs_text);
         auth = FirebaseAuth.getInstance();
         button = findViewById(id.logout_btn);
+        getLocal = findViewById(id.get_location);
+
         textView = findViewById(id.user_details);
         user = auth.getCurrentUser();
         if (user == null){
@@ -66,6 +68,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
+        getLocal.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), LocationActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
 
         if(!checkPermission()){
             requestPermission();

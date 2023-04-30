@@ -1,14 +1,18 @@
 package com.example.tripify;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.tripify.Activity.MainActivity;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,11 +20,12 @@ import java.util.concurrent.TimeUnit;
 
 public class MusicPlayerActivity extends AppCompatActivity {
 
-    TextView titleTv,currentTimeTv,totalTimeTv;
+    TextView titleTv,currentTimeTv,totalTimeTv, artist_name;
     SeekBar seekBar;
     ImageView pausePlay,nextBtn,previousBtn,musicIcon;
     ArrayList<AudioModel> songsList;
     AudioModel currentSong;
+    Button backToList;
     MediaPlayer mediaPlayer = MyMediaPlayer.getInstance();
     int x=0;
 
@@ -37,6 +42,7 @@ public class MusicPlayerActivity extends AppCompatActivity {
         nextBtn = findViewById(R.id.next);
         previousBtn = findViewById(R.id.previous);
         musicIcon = findViewById(R.id.music_icon_big);
+        backToList = findViewById(R.id.back_button_music);
 
         titleTv.setSelected(true);
 
@@ -46,6 +52,11 @@ public class MusicPlayerActivity extends AppCompatActivity {
         //ArrayList<AudioModel> songsList = new ArrayList<>();
         //Intent intent = new Intent();
         //intent.putParcelableArrayListExtra("LIST", songsList);
+        backToList.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
 
 
 
@@ -60,10 +71,10 @@ public class MusicPlayerActivity extends AppCompatActivity {
                     currentTimeTv.setText(convertToMMSS(mediaPlayer.getCurrentPosition()+""));
 
                     if(mediaPlayer.isPlaying()){
-                        pausePlay.setImageResource(R.drawable.ic_baseline_pause_circle_outline_24);
+                        pausePlay.setImageResource(R.drawable.pause_svgrepo_com);
                         musicIcon.setRotation(x++);
                     }else{
-                        pausePlay.setImageResource(R.drawable.ic_baseline_play_circle_outline_24);
+                        pausePlay.setImageResource(R.drawable.play_1003_svgrepo_com);
                         musicIcon.setRotation(0);
                     }
 
@@ -98,6 +109,7 @@ public class MusicPlayerActivity extends AppCompatActivity {
         currentSong = songsList.get(MyMediaPlayer.currentIndex);
 
         titleTv.setText(currentSong.getTitle());
+
 
         totalTimeTv.setText(convertToMMSS(currentSong.getDuration()));
 

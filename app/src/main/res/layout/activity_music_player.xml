@@ -7,17 +7,20 @@
     tools:context=".MusicPlayerActivity">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/song_title"
-        android:text="@string/title_of_the_song"
-        android:singleLine="true"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/back_button_music"
         android:ellipsize="marquee"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:layout_margin="20dp"
         android:padding="20dp"
-        />
+        android:singleLine="true"
+        android:text="@string/title_of_the_song"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
     <ImageView
         android:layout_width="240dp"
@@ -78,7 +81,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_skip_previous_24"
+                android:src="@drawable/previous_999_svgrepo_com"
                 android:layout_centerVertical="true"
                 android:layout_alignParentStart="true"
                 android:id="@+id/previous"
@@ -86,7 +89,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_skip_next_24"
+                android:src="@drawable/next_998_svgrepo_com"
                 android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"
                 android:id="@+id/next"
@@ -95,7 +98,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_pause_circle_outline_24"
+                android:src="@drawable/pause_svgrepo_com"
                 android:layout_centerInParent="true"
                 android:id="@+id/pause_play"
                 android:contentDescription="@string/todo_dup_2" />
@@ -103,5 +106,14 @@
         </RelativeLayout>
 
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/back_button_music"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/back_svgrepo_com"
+        android:text="@string/empty_string" />
 
 </RelativeLayout>

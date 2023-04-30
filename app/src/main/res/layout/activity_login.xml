@@ -89,7 +89,6 @@
         app:layout_constraintTop_toBottomOf="@+id/input_username" />
 
 
-
     <Button
         android:id="@+id/login_btn"
         android:layout_width="0dp"
@@ -98,6 +97,7 @@
         android:backgroundTint="@color/tripify_green"
         android:text="@string/login_btn"
         android:textAllCaps="false"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/input_password"
         app:layout_constraintHorizontal_bias="0.0"
